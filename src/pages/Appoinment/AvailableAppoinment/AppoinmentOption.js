@@ -11,7 +11,7 @@ const AppoinmentOption = ({options, setTreatment}) => {
                 <div className="card-actions justify-center">
                 {/* <button className="btn btn-primary text-white" onClick={()=>window.my_modal_3.showModal(setTreatment(options))}>Book Appoinment</button> */}
                 {/* <button className="btn btn-primary text-white" onClick={()=>setTreatment(options)}>Book Appoinment</button> */}
-                <label onClick={()=>setTreatment(options)} htmlFor="my_modal_6" className="btn btn-primary text-white">Book Appoinment </label>
+                <label disabled={slots.length === 0} onClick={()=>setTreatment(options)} htmlFor="my_modal_6" className="btn btn-primary text-white">Book Appoinment </label>
                 </div>
             </div>
         </div>
